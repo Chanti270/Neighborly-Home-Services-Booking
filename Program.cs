@@ -123,7 +123,7 @@ internal static class Schedule
         new(1, "Discovery consultation", "Discuss your goals and find the right next step.", 30),
         new(2, "Project review", "Get focused feedback on your project or plan.", 30),
         new(3, "Follow-up session", "Check progress and work through your questions.", 30)];
-    public static readonly Provider[] Providers = [new(1, "Alex Morgan", "Client advisor"), new(2, "Jordan Lee", "Project specialist"), new(3, "Sam Patel", "Client advisor")];
+    public static readonly Provider[] Providers = [new(1, "Chanti A", "Client advisor"), new(2, "Chanti B", "Project specialist"), new(3, "Chanti C", "Client advisor")];
     public static bool TryDate(string value, out DateTime date) => DateTime.TryParseExact(value, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out date);
     public static bool ValidDay(DateTime date) => date >= Now.Date && date <= Now.Date.AddDays(30);
     public static IEnumerable<DateTime> Slots(DateTime day)
